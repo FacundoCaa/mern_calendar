@@ -8,26 +8,26 @@ export const FabAddNew = () => {
 
     const handleClickNew = () => {
         setActiveEvent({
-        title: '',
-        notes: '',
-        start: new Date(),
-        end: addHours( new Date(), 2 ),
-        bgColor: '#fafafa',
-        user: {
-            _id: '123',
-            name: 'Facundo'
+            title: '',
+            notes: '',
+            start: new Date(),
+            end: addHours( new Date(), 2 ),
+            bgColor: '#fafafa',
+            user: {
+                _id: '123',
+                name: 'Fernando'
+            }
+        });
+        openDateModal();
     }
-        })
-        openDateModal()
 
-    }   
 
-  return (
-    <button
-        className="btn btn-primary fab"
-        onClick={ handleClickNew }
-    >
-        <i className="fas fa-plus"></i>
-    </button>
-  )
-}
+    return (
+        <button
+            className="btn btn-primary fab"
+            onClick={ handleClickNew }
+        >
+            <i className="fas fa-plus"></i>
+        </button>
+      )
+    }
